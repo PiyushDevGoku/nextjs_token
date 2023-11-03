@@ -25,3 +25,20 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
+
+
+
+
+curl 'http://13.214.115.241:8003/refresh-token' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-GB,en' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWdpc3RyYXRpb25pZCI6IjMiLCJlbWFpbCI6Im9yYUB1cHNjLmluIiwibmFtZSI6Ik9SQSBNYWluIiwic2Vzc2lvbmlkIjoiNzM1OTViNDQ1MDUzOTUwIiwiaWF0IjoxNjk4NjMxNTk5LCJleHAiOjI1NjI2MzE1OTl9.5qqiQqys42yHLz7wDhIdlKea2hxJErzva5vlS8L-rx4' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Origin: http://13.214.115.241:8002' \
+  -H 'Referer: http://13.214.115.241:8002/' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36' \
+  --data-raw '{"method":"POST","email":"ora@upsc.in"}' \
+  --compressed \
+  --insecure
